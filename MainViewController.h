@@ -7,7 +7,19 @@
 //
 
 #import "FlipsideViewController.h"
+#import "ExpBar.h"
+#import "DataStore.h"
+#import <QuartzCore/QuartzCore.h>
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
+@interface MainViewController : UIViewController <FlipsideViewControllerDelegate>{
+    float currentExp;
+    int currentLevel;
+    NSMutableArray* gymList;
+    DataStore *dataStore;
+    ExpBar *expBar;
+    float nextLevel;
+    UIButton *snackButton;
+}
+- (IBAction)tester:(id)sender;
 
 @end
